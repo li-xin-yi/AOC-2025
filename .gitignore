@@ -1,6 +1,38 @@
+# Gradle
 .gradle
-.idea
-.kotlin/
 build
-src/**/*.txt
 local.properties
+
+# Kotlin
+.kotlin/
+
+# IntelliJ IDEA
+.idea
+
+# Advent of Code input files (should not be shared publicly)
+src/**/*.txt
+python/**/*.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+.env
+*.egg-info/
+dist/
+build/
+*.egg
+
+# IDE
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
