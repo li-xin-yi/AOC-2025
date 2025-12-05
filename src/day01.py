@@ -1,9 +1,7 @@
-import sys
-input = sys.stdin.readline
 
 def read_input(path: str) -> list[str]:
-    with open(path, 'r') as file:
-        return [line.strip() for line in file.readlines()]
+    with open(path, 'r') as f:
+        return [line.strip() for line in f.readlines()]
 
 
 def solve1(lst):

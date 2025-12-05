@@ -1,5 +1,4 @@
 import sys
-input = sys.stdin.readline
 
 def read_input(path: str) -> list[str]:
     with open(path, 'r') as f:
