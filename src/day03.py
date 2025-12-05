@@ -1,5 +1,4 @@
 import sys
-from itertools import accumulate
 input = sys.stdin.readline
 
 def read_input(path: str) -> list[str]:
