@@ -1,4 +1,4 @@
-
+from typing import List
 def read_input(path: str) -> List[str]:
     with open(path, 'r') as f:
         return [line.strip('\n') for line in f.readlines()]
