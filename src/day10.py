@@ -34,9 +34,7 @@ def solve_ilp(input: List) -> int:
 
     prob = pulp.LpProblem("MinButtonPress", pulp.LpMinimize)
     x = [pulp.LpVariable(f'x_{i}', cat='Integer', lowBound=0) for i in range(n)]
-
     prob += pulp.lpSum(x)
-
     for i in range(m):
         prob += (pulp.lpSum(x[j] for j in range(n) if i in buttons[j]) == target[i])
         
@@ -47,7 +45,7 @@ def solve_ilp(input: List) -> int:
 
     presses = [int(pulp.value(var)) for var in x]
     return sum(presses)
-    
+
 def solve2(input: List[List]) -> int:
     res = 0
     for line in input:
